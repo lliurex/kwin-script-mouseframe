@@ -1,0 +1,25 @@
+{
+    "KPackageStructure": "KWin/Script",
+    "KPlugin": {
+        "Authors": [
+            {
+                "Email": "juanma1980@gmail.com",
+                "Name": "Juanma1980"
+            }
+        ],
+        "Description": "Displays a frame around the mouse pointer",
+        "Description[es]": "Muestra un marco alrededor del puntero",
+        "Description[ca]": "Mostra un marc al voltant del punter",
+        "Icon": "preferences-system-windows",
+        "Id": "mouseframe",
+        "License": "GPL",
+        "Name": "Mouse Frame",
+        "Name[es]": "Enmarca puntero",
+        "Name[ca]": " Emmarca punter",
+        "Version": "1.0"
+    },
+    "X-KWin-Exclude-Listing": "true",
+    "X-Plasma-API": "declarativescript",
+    "X-KDE-ConfigModule": "kwin/effects/configs/kcm_kwin4_genericscripted",
+    "X-Plasma-MainScript": "ui/main.qml"
+}
