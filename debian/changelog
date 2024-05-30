@@ -1,0 +1,7 @@
+kwin-script-mouseframe (0.9.1) jammy; urgency=medium
+
+  * Kwin script that displays a frame around the mouse pointer
+  * TODO: i18n
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 29 May 2024 15:45:10 +0200
+
