@@ -56,8 +56,8 @@ Item {
 
 		function applyConfig(){
 		   readConfig();
-		   //rect.border.width=root.borderWidth;
-		   //rect.radius=root.degress;
+		   rect.border.width=root.borderWidth;
+		   rect.radius=root.degress;
 		   root.height=Kirigami.Units.gridUnit*root.frameSize;
 		   root.width=Kirigami.Units.gridUnit*root.frameSize;
 		}
