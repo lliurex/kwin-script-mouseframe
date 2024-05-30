@@ -46,7 +46,7 @@ Item {
 			frameSize= KWin.readConfig("FrameSize",3);
 			borderWidth= KWin.readConfig("BorderWidth",0);
 			var framet= KWin.readConfig("FrameType",0);
-			if (framet==0) degress= 90;
+			if (parseInt(framet)==0) degress= 90;
 
 		}
 
