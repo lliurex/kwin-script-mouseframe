@@ -20,6 +20,8 @@ Item {
 		property int frameSize: 2
 		property int borderWidth: 0
 		property int degress: 0
+		property int offshoreX: 0
+		property int offshoreY: 0
 		property bool outputOnly:true
 		color:Qt.rgba(0,0,0,0)
 		visible:false
@@ -47,6 +49,8 @@ Item {
 			borderWidth= KWin.readConfig("BorderWidth",0);
 			var framet= KWin.readConfig("FrameType",0);
 			if (parseInt(framet)==0) degress= 90;
+			offshoreX= KWin.readConfig("OffShoreX",0);
+			offshoreY= KWin.readConfig("OffShoreY",0);
 
 		}
 
@@ -63,8 +67,8 @@ Item {
 		}
 
 		function moveFrame(){
-		   root.y=workspace.cursorPos.y-(root.height*0.4);
-		   root.x=workspace.cursorPos.x-(root.width*0.5);
+		   root.y=workspace.cursorPos.y-(root.height*0.4)+root.offshoreY;
+		   root.x=workspace.cursorPos.x-(root.width*0.5)+root.offshoreX;
 
 		} // Window
 	} //ITEM

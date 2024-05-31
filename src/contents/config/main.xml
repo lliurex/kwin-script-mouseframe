@@ -20,5 +20,11 @@
         <entry name="FrameType" type="String">
             <default>"Circle"</default>
         </entry>
+        <entry name="OffShoreX" type="Int">
+            <default>0</default>
+        </entry>
+        <entry name="OffShoreY" type="Int">
+            <default>0</default>
+        </entry>
     </group>
 </kcfg>
