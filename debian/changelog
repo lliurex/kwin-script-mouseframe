@@ -1,3 +1,9 @@
+kwin-script-mouseframe (0.9.2) jammy; urgency=medium
+
+  * Add displace frame from pointer
+
+ -- Juanma1980 <juanma1980@gmail.com>  Thu, 27 Jun 2024 08:05:10 +0200
+
 kwin-script-mouseframe (0.9.1) jammy-testing; urgency=medium
 
   * Kwin script that displays a frame around the mouse pointer
