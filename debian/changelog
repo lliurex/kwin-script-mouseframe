@@ -1,3 +1,9 @@
+kwin-script-mouseframe (0.9.3) noble; urgency=medium
+
+  * Migrate to kf6
+
+ -- Juanma1980 <juanma1980@gmail.com>  Wed, 25 Sep 2024 11:27:39 +0200
+
 kwin-script-mouseframe (0.9.2) jammy; urgency=medium
 
   * Add displace frame from pointer
