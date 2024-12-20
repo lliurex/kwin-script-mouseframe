@@ -1,3 +1,9 @@
+kwin-script-mouseframe (1.0.0-0llx23) jammy; urgency=medium
+
+  * Added translations
+
+ -- Juanma1980 <juanma1980@gmail.com>  Fri, 20 Dec 2024 07:26:04 +0100
+
 kwin-script-mouseframe (0.9.2) jammy; urgency=medium
 
   * Add displace frame from pointer
