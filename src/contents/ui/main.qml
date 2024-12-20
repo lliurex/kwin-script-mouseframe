@@ -8,7 +8,7 @@ import QtQuick 2.12
 import QtQuick.Window 2.12
 import org.kde.kirigami 2.12 as Kirigami
 import org.kde.plasma.core 2.0 as PlasmaCore;
-import org.kde.kwin 2.0 as KWinComponents
+import org.kde.kwin 3.0 as KWinComponents
 
 //Window {
 Item {
@@ -67,19 +67,19 @@ Item {
 		}
 
 		function moveFrame(){
-		   root.y=workspace.cursorPos.y-(root.height*0.4)+root.offshoreY;
-		   root.x=workspace.cursorPos.x-(root.width*0.5)+root.offshoreX;
+		   root.y=KWinComponents.Workspace.cursorPos.y-(root.height*0.4)+root.offshoreY;
+		   root.x=KWinComponents.Workspace.cursorPos.x-(root.width*0.5)+root.offshoreX;
 
 		} // Window
 	} //ITEM
 
     Connections {
-        target: options
+        target: KWinComponents.Options
         function onConfigChanged() { updateConfig(); }
     }
 
     Connections {
-        target: workspace
+        target: KWinComponents.Workspace
         function onCursorPosChanged() {
             root.moveFrame();
         }
