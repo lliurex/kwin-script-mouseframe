@@ -23,6 +23,7 @@ Item {
 		property int offshoreX: 0
 		property int offshoreY: 0
 		property bool outputOnly:true
+		property bool fshow:true
 		color:Qt.rgba(0,0,0,0)
 		visible:false
 		flags:Qt.FrameLessHint|Qt.WindowStaysOnTopHint|Qt.WindowSystemMenuHint| Qt.X11BypassWindowManagerHint | Qt.FramelessWindowHint| Qt.WindowTransparentForInput| Qt.TransparentForMouseEvents|Qt.OnScreenDisplay
@@ -35,9 +36,17 @@ Item {
 				visible:true
 			}
 
-		function reloadFrame(){
-			applyConfig();
-			moveFrame();
+		function reloadFrame(show=true){
+			root.fshow=show;
+			root.fshow=show;
+			if (root.fshow==true)
+			{
+				if (rect.visible==false) rect.visible=true;
+				applyConfig();
+				moveFrame();
+			 } else {
+				rect.visible=false;
+			}
 		}
 		
 		function readConfig(){
@@ -87,6 +96,7 @@ Item {
 
     Component.onCompleted: {
         //KWin.registerWindow(root);
+		KWin.registerShortcut("Toggle MouseFrame","Shows or hides MouseFrame","Meta+Ctrl+F",function(){reloadFrame(!rect.visible);});
         root.reloadFrame(true);
 		root.show();
     }
