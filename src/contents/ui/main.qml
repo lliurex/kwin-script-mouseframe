@@ -94,15 +94,9 @@ Item {
         }
     }
 
-	KWinComponents.ShortcutHandler {
-		name: "Toggle MouseFrame"
-		text: "Shows or hides MouseFrame"
-		sequence: 'Meta+Ctrl+F'
-		onActivated: root.reloadFrame(!rect.visible)
-	}
-
     Component.onCompleted: {
         //KWin.registerWindow(root);
+		KWin.registerShortcut("Toggle MouseFrame","Shows or hides MouseFrame","Meta+Ctrl+F",function(){reloadFrame(!rect.visible);});
         root.reloadFrame(true);
 		root.show();
     }
