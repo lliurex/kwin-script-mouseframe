@@ -14,6 +14,7 @@ import org.kde.kwin 3.0 as KWinComponents
 Item {
 	Window {
 		id: root
+		flags:Qt.FrameLessHint|Qt.WindowStaysOnTopHint|Qt.WindowSystemMenuHint| Qt.X11BypassWindowManagerHint | Qt.FramelessWindowHint| Qt.WindowTransparentForInput| Qt.TransparentForMouseEvents|Qt.OnScreenDisplay
 		property color bkgColor: "black"
 		property var frameOpacity: 15
 		property color rColor: "black"
@@ -26,7 +27,6 @@ Item {
 		property bool fshow:true
 		color:Qt.rgba(0,0,0,0)
 		visible:false
-		flags:Qt.FrameLessHint|Qt.WindowStaysOnTopHint|Qt.WindowSystemMenuHint| Qt.X11BypassWindowManagerHint | Qt.FramelessWindowHint| Qt.WindowTransparentForInput| Qt.TransparentForMouseEvents|Qt.OnScreenDisplay
 			Rectangle {
 				id:rect
 				radius:90
@@ -96,7 +96,7 @@ Item {
 
     Component.onCompleted: {
         //KWin.registerWindow(root);
-		KWin.registerShortcut("Toggle MouseFrame","Shows or hides MouseFrame","Meta+Ctrl+F",function(){reloadFrame(!rect.visible);});
+		KWin.registerShortcut("Toggle MouseFrame","Shows or hides MouseFrame","Meta+Ctrl+F",function(){root.reloadFrame(!rect.visible);});
         root.reloadFrame(true);
 		root.show();
     }
