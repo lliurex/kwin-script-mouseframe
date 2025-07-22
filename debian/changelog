@@ -1,3 +1,9 @@
+kwin-script-mouseframe (1.0-0llx25) noble; urgency=medium
+
+  * Noble release
+
+ -- Juanma1980 <juanma1980@gmail.com>  Tue, 22 Jul 2025 10:28:00 +0200
+
 kwin-script-mouseframe (0.9.3) noble; urgency=medium
 
   * Migrate to kf6
