@@ -50,16 +50,16 @@ Item {
 		}
 		
 		function readConfig(){
-			bkgColor= KWin.readConfig("BackgroundColor",Qt.rgba(0,0,1,0.1));
-			frameOpacity= KWin.readConfig("FrameOpacity",25);
+			bkgColor= KWin.readConfig("BackgroundColor",Qt.rgba(1,1,0,0.1));
+			frameOpacity= KWin.readConfig("FrameOpacity",root.frameOpacity);
 			frameOpacity=frameOpacity/100
 			rColor=Qt.rgba(bkgColor.r,bkgColor.g,bkgColor.b,frameOpacity);
-			frameSize= KWin.readConfig("FrameSize",3);
-			borderWidth= KWin.readConfig("BorderWidth",0);
+			frameSize= KWin.readConfig("FrameSize",root.frameSize);
+			borderWidth= KWin.readConfig("BorderWidth",root.borderWidth);
 			var framet= KWin.readConfig("FrameType",0);
 			if (parseInt(framet)==0) degress= 90;
-			offshoreX= KWin.readConfig("OffShoreX",0);
-			offshoreY= KWin.readConfig("OffShoreY",0);
+			offshoreX= KWin.readConfig("OffShoreX",root.offShoreX);
+			offshoreY= KWin.readConfig("OffShoreY",root.offShoreY);
 
 		}
 
