@@ -1,3 +1,9 @@
+kwin-script-mouseframe (1.0.1) jammy; urgency=medium
+
+  * Better defaults
+
+ -- Juanma1980 <juanma1980@gmail.com>  Mon, 28 Sep 2026 07:25:59 +0200
+
 kwin-script-mouseframe (1.0.0-0llx23) jammy; urgency=medium
 
   * Added translations
