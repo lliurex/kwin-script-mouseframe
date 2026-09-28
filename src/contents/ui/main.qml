@@ -15,14 +15,14 @@ Item {
 	Window {
 		id: root
 		flags:Qt.FrameLessHint|Qt.WindowStaysOnTopHint|Qt.WindowSystemMenuHint| Qt.X11BypassWindowManagerHint | Qt.FramelessWindowHint| Qt.WindowTransparentForInput| Qt.TransparentForMouseEvents|Qt.OnScreenDisplay
-		property color bkgColor: "black"
-		property var frameOpacity: 15
+		property color bkgColor: "yellow"
+		property var frameOpacity: 25
 		property color rColor: "black"
 		property int frameSize: 2
-		property int borderWidth: 0
+		property int borderWidth: 1
 		property int degress: 0
-		property int offshoreX: 0
-		property int offshoreY: 0
+		property int offshoreX: 24
+		property int offshoreY: 30
 		property bool outputOnly:true
 		property bool fshow:true
 		color:Qt.rgba(0,0,0,0)
