@@ -58,8 +58,9 @@ Item {
 			borderWidth= KWin.readConfig("BorderWidth",root.borderWidth);
 			var framet= KWin.readConfig("FrameType",0);
 			if (parseInt(framet)==0) degress= 90;
-			offshoreX= KWin.readConfig("OffShoreX",root.offShoreX);
-			offshoreY= KWin.readConfig("OffShoreY",root.offShoreY);
+			offshoreX= KWin.readConfig("OffShoreX",root.offshoreX);
+			offshoreY= KWin.readConfig("OffShoreY",root.offshoreY);
+			console.log("config offshoreX "+offshoreX);
 
 		}
 
